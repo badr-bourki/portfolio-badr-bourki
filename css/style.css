@@ -509,3 +509,49 @@ input::placeholder, textarea::placeholder {
         transform: rotate(360deg);
     }
 }
+
+/* ====================================
+   HERO RESPONSIVE FIXES
+   ==================================== */
+
+/* Ensure hero buttons are visible on all screen sizes */
+.hero-buttons {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    position: relative;
+    z-index: 100;
+}
+
+.hero-button {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+/* Mobile-first approach - buttons stack vertically on mobile */
+@media (max-width: 768px) {
+    .hero-buttons {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    .hero-button {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+/* Desktop - buttons side by side */
+@media (min-width: 769px) {
+    .hero-buttons {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+    
+    .hero-button {
+        min-width: 150px;
+    }
+}

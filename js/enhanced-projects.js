@@ -149,11 +149,11 @@ class EnhancedProjects {
         technologies: ['React', 'OpenAI API', 'Express', 'PostgreSQL']
       },
       {
-        imgSrc: '../assets/projects/project1.png',
-        title: 'Analytics Dashboard',
+        imgSrc: '../assets/projects/project4.png',
+        title: 'Restaurant albaraka',
         description:
-          'Real-time analytics dashboard with interactive charts and data visualization. Displays key metrics and trends with customizable widgets.',
-        demoLink: 'https://vitahealth-six.vercel.app/',
+          'Restaurant Al Baraka is a professional and fully-featured website for a traditional Moroccan restaurant that offers an authentic dining experience. The website is carefully designed to reflect authentic Moroccan identity with a modern contemporary touch.',
+        demoLink: 'https://restorent-baraka.vercel.app/',
         githubLink: 'https://github.com',
         technologies: ['React', 'D3.js', 'GraphQL', 'Node.js']
       },

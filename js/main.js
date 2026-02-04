@@ -602,6 +602,23 @@ class AnalyticsTracker {
 new AnalyticsTracker();
 
 // ====================================
+// BUTTON HANDLERS
+// ====================================
+
+function handleViewWork() {
+    const myWorkSection = document.getElementById('my-work');
+    if (myWorkSection) {
+        myWorkSection.scrollIntoView({ behavior: 'smooth' });
+    } else {
+        console.warn('My Work section not found');
+    }
+}
+
+function handleDownloadCV() {
+    window.open('cv.pdf', '_blank');
+}
+
+// ====================================
 // INITIALIZATION ON DOM READY
 // ====================================
 
